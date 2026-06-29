@@ -230,6 +230,55 @@
     });
   }
 
+  /* -------- Contact form (validation + mailto compose) -------- */
+  function contactForm() {
+    const form = $("#contactForm");
+    if (!form) return;
+    const note = $("#cformNote");
+    const submit = form.querySelector(".cform__submit");
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    const setError = (field, msg) => {
+      const wrap = field.closest(".cform__field");
+      wrap.classList.toggle("is-invalid", !!msg);
+      const err = wrap.querySelector(".cform__error");
+      if (err) err.textContent = msg || "";
+    };
+
+    form.querySelectorAll("input, textarea").forEach((el) => {
+      el.addEventListener("input", () => { if (el.closest(".cform__field").classList.contains("is-invalid")) validateField(el); });
+    });
+
+    function validateField(el) {
+      const v = el.value.trim();
+      if (!v && el.required) { setError(el, "Ce champ est requis."); return false; }
+      if (el.type === "email" && v && !emailRe.test(v)) { setError(el, "Adresse email invalide."); return false; }
+      setError(el, "");
+      return true;
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const fields = Array.from(form.querySelectorAll("input[required], textarea[required]"));
+      const ok = fields.map(validateField).every(Boolean);
+      if (!ok) { if (note) note.textContent = "Merci de compléter les champs en surbrillance."; return; }
+
+      const get = (n) => (form.elements[n] ? form.elements[n].value.trim() : "");
+      const subject = `Nouveau projet — ${get("type")} · ${get("name")}`;
+      const body =
+        `Nom : ${get("name")}\n` +
+        `Email : ${get("email")}\n` +
+        `Type de projet : ${get("type")}\n` +
+        `Budget estimé : ${get("budget")}\n\n` +
+        `Message :\n${get("message")}\n`;
+      const href = `mailto:bonjour@meridien.studio?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      if (submit) { submit.classList.add("is-sent"); submit.querySelector("span").textContent = "Message prêt ✦"; }
+      if (note) note.innerHTML = 'Votre messagerie va s’ouvrir. Sinon, écrivez-nous à <a href="mailto:bonjour@meridien.studio">bonjour@meridien.studio</a>.';
+      window.location.href = href;
+    });
+  }
+
   /* -------- Init -------- */
   function init() {
     preloader();
@@ -242,6 +291,7 @@
     mobileMenu();
     anchors();
     magnetic();
+    contactForm();
     // current year already set in markup (2026)
   }
 
