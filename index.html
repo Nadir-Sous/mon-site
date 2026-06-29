@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MÉRIDIEN — Studio de Création</title>
+  <meta name="description" content="MÉRIDIEN — studio de création indépendant. Identité de marque, direction artistique, espaces et expériences digitales d'exception." />
+  <meta name="theme-color" content="#f4f1ea" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2316140f'/%3E%3Ctext x='50' y='73' font-family='Georgia,serif' font-size='66' fill='%23b89b6e' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MÉRIDIEN — Studio de Création" />
+  <meta property="og:description" content="Identité de marque, direction artistique & expériences digitales d'exception." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://d8j0ntlcm91z4.cloudfront.net/user_3Fm94z9sy469giaHKzKkWXFTcsW/hf_20260629_081544_345b016b-ec9b-4dba-b9ce-48c08c9ff3be.png" />
+  <link rel="canonical" href="https://meridien.studio/" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MÉRIDIEN",
+    "description": "Studio de création indépendant : identité de marque, direction artistique, espaces & expériences digitales.",
+    "url": "https://meridien.studio/",
+    "email": "bonjour@meridien.studio",
+    "foundingDate": "2014",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "14 rue de Sévigné",
+      "postalCode": "75004",
+      "addressLocality": "Paris",
+      "addressCountry": "FR"
+    },
+    "knowsAbout": ["Identité de marque", "Direction artistique", "Design d'espace", "Expérience digitale"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__word" data-text="MÉRIDIEN">MÉRIDIEN</span>
+      <span class="preloader__count" id="preloaderCount">00</span>
+    </div>
+    <div class="preloader__bar"><span id="preloaderFill"></span></div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Header / Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" data-cursor="hover" aria-label="MÉRIDIEN, retour en haut">
+      MÉRIDIEN<sup>®</sup>
+    </a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#studio" data-cursor="hover"><span>Studio</span></a>
+      <a href="#services" data-cursor="hover"><span>Savoir-faire</span></a>
+      <a href="#travaux" data-cursor="hover"><span>Travaux</span></a>
+      <a href="#contact" data-cursor="hover"><span>Contact</span></a>
+    </nav>
+    <a href="#contact" class="nav__cta" data-cursor="hover">
+      <span class="nav__cta-dot"></span> Démarrer un projet
+    </a>
+    <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <nav class="menu-overlay__links">
+      <a href="#studio" data-cursor="hover"><span>01</span>Studio</a>
+      <a href="#services" data-cursor="hover"><span>02</span>Savoir-faire</a>
+      <a href="#travaux" data-cursor="hover"><span>03</span>Travaux</a>
+      <a href="#approche" data-cursor="hover"><span>04</span>Approche</a>
+      <a href="#contact" data-cursor="hover"><span>05</span>Contact</a>
+    </nav>
+    <div class="menu-overlay__foot">
+      <a href="mailto:bonjour@meridien.studio">bonjour@meridien.studio</a>
+      <span>Paris · Genève</span>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__media">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Fm94z9sy469giaHKzKkWXFTcsW/hf_20260629_081544_345b016b-ec9b-4dba-b9ce-48c08c9ff3be.png" alt="Voile de soie ivoire flottant dans une galerie de béton" id="heroImg" />
+        <div class="hero__media-overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal" data-reveal>
+          <span class="line"></span> Studio de création indépendant — depuis 2014
+        </p>
+        <h1 class="hero__title">
+          <span class="hero__line"><span class="hero__line-inner">Nous façonnons</span></span>
+          <span class="hero__line"><span class="hero__line-inner">des marques <em>intemporelles</em></span></span>
+          <span class="hero__line"><span class="hero__line-inner">qui marquent le temps.</span></span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__lede reveal" data-reveal>
+            Identité, direction artistique, espaces &amp; digital.
+            Un studio, une obsession&nbsp;: l'élégance du détail.
+          </p>
+          <a href="#travaux" class="hero__scroll" data-cursor="hover">
+            <span>Découvrir</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__meta">
+        <span>N°01 — Studio</span>
+        <span>48°51'N 2°21'E</span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Identité de marque</span><span class="marquee__star">✦</span>
+        <span>Direction artistique</span><span class="marquee__star">✦</span>
+        <span>Design d'espace</span><span class="marquee__star">✦</span>
+        <span>Expérience digitale</span><span class="marquee__star">✦</span>
+        <span>Édition &amp; Print</span><span class="marquee__star">✦</span>
+        <span>Identité de marque</span><span class="marquee__star">✦</span>
+        <span>Direction artistique</span><span class="marquee__star">✦</span>
+        <span>Design d'espace</span><span class="marquee__star">✦</span>
+        <span>Expérience digitale</span><span class="marquee__star">✦</span>
+        <span>Édition &amp; Print</span><span class="marquee__star">✦</span>
+      </div>
+    </div>
+
+    <!-- STUDIO / MANIFESTO -->
+    <section class="studio" id="studio">
+      <div class="section-head">
+        <span class="section-head__index">( 01 )</span>
+        <span class="section-head__label">Le Studio</span>
+      </div>
+      <p class="studio__statement">
+        <span data-reveal-word>Nous</span> <span data-reveal-word>croyons</span>
+        <span data-reveal-word>qu'une</span> <span data-reveal-word>marque</span>
+        <span data-reveal-word>n'est</span> <span data-reveal-word>pas</span>
+        <span data-reveal-word>un</span> <span data-reveal-word>logo,</span>
+        <span data-reveal-word>mais</span> <span data-reveal-word>une</span>
+        <span data-reveal-word><em>présence.</em></span>
+        <span data-reveal-word>Un</span> <span data-reveal-word>équilibre</span>
+        <span data-reveal-word>rare</span> <span data-reveal-word>entre</span>
+        <span data-reveal-word>silence</span> <span data-reveal-word>et</span>
+        <span data-reveal-word>intention,</span> <span data-reveal-word>entre</span>
+        <span data-reveal-word>matière</span> <span data-reveal-word>et</span>
+        <span data-reveal-word>lumière.</span>
+      </p>
+      <div class="studio__grid">
+        <div class="studio__col reveal" data-reveal>
+          <p>Fondé à Paris, MÉRIDIEN est un studio indépendant réunissant directeurs artistiques, designers et stratèges autour d'une même exigence&nbsp;: créer des marques qui durent.</p>
+        </div>
+        <div class="studio__col reveal" data-reveal>
+          <p>Nous travaillons avec un nombre volontairement limité de clients chaque année — maisons de luxe, fondations culturelles, jeunes maisons ambitieuses — pour leur consacrer une attention totale.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Quelques chiffres">
+      <div class="stats__item reveal" data-reveal>
+        <span class="stats__num" data-count="11">0</span>
+        <span class="stats__label">années de création</span>
+      </div>
+      <div class="stats__item reveal" data-reveal>
+        <span class="stats__num" data-count="140" data-suffix="+">0</span>
+        <span class="stats__label">projets livrés</span>
+      </div>
+      <div class="stats__item reveal" data-reveal>
+        <span class="stats__num" data-count="27">0</span>
+        <span class="stats__label">distinctions</span>
+      </div>
+      <div class="stats__item reveal" data-reveal>
+        <span class="stats__num" data-count="9">0</span>
+        <span class="stats__label">pays</span>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="section-head">
+        <span class="section-head__index">( 02 )</span>
+        <span class="section-head__label">Savoir-faire</span>
+      </div>
+      <h2 class="services__title reveal" data-reveal>Quatre disciplines,<br/>une seule signature.</h2>
+
+      <ul class="services__list">
+        <li class="service" data-reveal>
+          <span class="service__num">01</span>
+          <h3 class="service__name" data-cursor="hover">Identité de marque</h3>
+          <p class="service__desc">Plateforme de marque, naming, logotype, système visuel et charte. Une fondation cohérente, pensée pour durer.</p>
+          <span class="service__plus">+</span>
+        </li>
+        <li class="service" data-reveal>
+          <span class="service__num">02</span>
+          <h3 class="service__name" data-cursor="hover">Direction artistique</h3>
+          <p class="service__desc">Photographie, campagnes, univers visuels et éditoriaux. Nous donnons un ton, un regard, une atmosphère.</p>
+          <span class="service__plus">+</span>
+        </li>
+        <li class="service" data-reveal>
+          <span class="service__num">03</span>
+          <h3 class="service__name" data-cursor="hover">Design d'espace</h3>
+          <p class="service__desc">Scénographie, retail, stands et lieux. Une marque qui se vit autant qu'elle se regarde.</p>
+          <span class="service__plus">+</span>
+        </li>
+        <li class="service" data-reveal>
+          <span class="service__num">04</span>
+          <h3 class="service__name" data-cursor="hover">Expérience digitale</h3>
+          <p class="service__desc">Sites, interfaces et produits numériques. Le geste juste, l'interaction sobre, la performance invisible.</p>
+          <span class="service__plus">+</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="travaux">
+      <div class="section-head">
+        <span class="section-head__index">( 03 )</span>
+        <span class="section-head__label">Travaux sélectionnés</span>
+      </div>
+
+      <div class="work__grid">
+        <a href="projects/maison-alba.html" class="work__item work__item--tall" data-reveal data-cursor="view">
+          <div class="work__img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Fm94z9sy469giaHKzKkWXFTcsW/hf_20260629_081550_c9421441-8a69-4a58-a628-3ae98f8f8be5.png" alt="Identité de marque MAISON ALBA" loading="lazy" /></div>
+          <div class="work__info">
+            <h3>Maison Alba</h3>
+            <span>Identité · 2024</span>
+          </div>
+        </a>
+        <a href="projects/serac.html" class="work__item" data-reveal data-cursor="view">
+          <div class="work__img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Fm94z9sy469giaHKzKkWXFTcsW/hf_20260629_081554_bffabdd1-14fd-424f-a5e5-061ed1dbb95b.png" alt="Scénographie d'espace SÉRAC" loading="lazy" /></div>
+          <div class="work__info">
+            <h3>Sérac</h3>
+            <span>Espace · 2023</span>
+          </div>
+        </a>
+        <a href="projects/studio-objet.html" class="work__item" data-reveal data-cursor="view">
+          <div class="work__img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Fm94z9sy469giaHKzKkWXFTcsW/hf_20260629_081556_fb63d16e-383b-40e5-9a26-175d54335a65.png" alt="Direction artistique produit OBJET" loading="lazy" /></div>
+          <div class="work__info">
+            <h3>Studio Objet</h3>
+            <span>Direction artistique · 2023</span>
+          </div>
+        </a>
+      </div>
+
+      <a href="projects/maison-alba.html" class="work__more" data-cursor="hover">
+        <span>Voir les études de cas</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="approach" id="approche">
+      <div class="section-head">
+        <span class="section-head__index">( 04 )</span>
+        <span class="section-head__label">Notre approche</span>
+      </div>
+      <div class="approach__rows">
+        <div class="approach__row" data-reveal>
+          <span class="approach__step">01</span>
+          <h3 class="approach__name">Écouter</h3>
+          <p class="approach__text">Tout commence par une conversation. Comprendre l'histoire, les ambitions, ce qui ne se dit pas encore.</p>
+        </div>
+        <div class="approach__row" data-reveal>
+          <span class="approach__step">02</span>
+          <h3 class="approach__name">Définir</h3>
+          <p class="approach__text">Nous traçons une direction claire — une idée forte qui guidera chaque décision créative.</p>
+        </div>
+        <div class="approach__row" data-reveal>
+          <span class="approach__step">03</span>
+          <h3 class="approach__name">Façonner</h3>
+          <p class="approach__text">Le dessin, la matière, le mouvement. Nous travaillons le détail jusqu'à l'évidence.</p>
+        </div>
+        <div class="approach__row" data-reveal>
+          <span class="approach__step">04</span>
+          <h3 class="approach__name">Déployer</h3>
+          <p class="approach__text">Une marque vivante, cohérente sur chaque support, prête à grandir avec vous.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote">
+      <blockquote class="quote__text" data-reveal>
+        « MÉRIDIEN a su traduire l'âme de notre maison avec une justesse rare.
+        Un travail d'orfèvre, du premier croquis à la dernière finition. »
+      </blockquote>
+      <p class="quote__author reveal" data-reveal>
+        <span>Élise Vandermeer</span> — Directrice générale, Maison Alba
+      </p>
+    </section>
+
+    <!-- CONTACT / CTA -->
+    <section class="contact" id="contact">
+      <div class="section-head section-head--light">
+        <span class="section-head__index">( 05 )</span>
+        <span class="section-head__label">Contact</span>
+      </div>
+      <p class="contact__pre reveal" data-reveal>Un projet en tête&nbsp;?</p>
+      <a href="mailto:bonjour@meridien.studio" class="contact__mail" data-cursor="hover">
+        <span class="contact__mail-line">bonjour@</span>
+        <span class="contact__mail-line">meridien.studio</span>
+      </a>
+
+      <form class="cform" id="contactForm" novalidate>
+        <div class="cform__row">
+          <div class="cform__field">
+            <label for="cf-name">Votre nom</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required />
+            <span class="cform__error" data-for="cf-name"></span>
+          </div>
+          <div class="cform__field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required />
+            <span class="cform__error" data-for="cf-email"></span>
+          </div>
+        </div>
+        <div class="cform__row">
+          <div class="cform__field">
+            <label for="cf-type">Type de projet</label>
+            <select id="cf-type" name="type">
+              <option value="Identité de marque">Identité de marque</option>
+              <option value="Direction artistique">Direction artistique</option>
+              <option value="Design d'espace">Design d'espace</option>
+              <option value="Expérience digitale">Expérience digitale</option>
+              <option value="Autre">Autre / je ne sais pas encore</option>
+            </select>
+          </div>
+          <div class="cform__field">
+            <label for="cf-budget">Budget estimé</label>
+            <select id="cf-budget" name="budget">
+              <option value="< 20k€">moins de 20 000 €</option>
+              <option value="20–50k€">20 000 – 50 000 €</option>
+              <option value="50–100k€">50 000 – 100 000 €</option>
+              <option value="> 100k€">plus de 100 000 €</option>
+            </select>
+          </div>
+        </div>
+        <div class="cform__field">
+          <label for="cf-msg">Parlez-nous de votre projet</label>
+          <textarea id="cf-msg" name="message" rows="4" required></textarea>
+          <span class="cform__error" data-for="cf-msg"></span>
+        </div>
+        <div class="cform__foot">
+          <button type="submit" class="cform__submit" data-cursor="hover">
+            <span>Envoyer le message</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+          </button>
+          <p class="cform__note" id="cformNote" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+
+      <div class="contact__grid">
+        <div class="contact__col reveal" data-reveal>
+          <span class="contact__label">Studio</span>
+          <p>14 rue de Sévigné<br/>75004 Paris, France</p>
+        </div>
+        <div class="contact__col reveal" data-reveal>
+          <span class="contact__label">Réseaux</span>
+          <p>
+            <a href="#" data-cursor="hover">Instagram</a><br/>
+            <a href="#" data-cursor="hover">Behance</a><br/>
+            <a href="#" data-cursor="hover">LinkedIn</a>
+          </p>
+        </div>
+        <div class="contact__col reveal" data-reveal>
+          <span class="contact__label">Nouveaux projets</span>
+          <p><a href="mailto:bonjour@meridien.studio" data-cursor="hover">bonjour@meridien.studio</a><br/>+33 1 84 80 00 00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__big" aria-hidden="true">MÉRIDIEN</div>
+    <div class="footer__bar">
+      <span>© 2026 MÉRIDIEN Studio. Tous droits réservés.</span>
+      <button class="footer__top" id="backTop" data-cursor="hover">Haut de page ↑</button>
+      <span>Conçu &amp; façonné à Paris</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
